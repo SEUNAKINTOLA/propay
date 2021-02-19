@@ -52,7 +52,7 @@ namespace ProPay.Infrastructure
                 .InstancePerLifetimeScope();
             builder.RegisterType<ExpensivePaymentGateway>().As<IExpensivePaymentGateway>()
                 .InstancePerLifetimeScope();
-            builder.RegisterType<PremiumPaymentGateway>().As<IPremiumPaymentService>()
+            builder.RegisterType<PremiumPaymentGateway>().As<IPremiumPaymentGateway>()
                 .InstancePerLifetimeScope();
         }
 

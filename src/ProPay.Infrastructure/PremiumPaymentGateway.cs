@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProPay.Infrastructure
 {
-    public class PremiumPaymentGateway : IPremiumPaymentService
+    public class PremiumPaymentGateway : IPremiumPaymentGateway
     {
 
         public PremiumPaymentGateway()

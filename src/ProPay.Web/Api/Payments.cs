@@ -17,8 +17,8 @@ namespace ProPay.Web.Api
 
         private readonly ICheapPaymentGateway _cheapPayment;
         private readonly IExpensivePaymentGateway _expensivePayment;
-        private readonly IPremiumPaymentService _premiumPayment;
-        public PaymentsController(ICheapPaymentGateway cheapPayment, IExpensivePaymentGateway expensivePayment, IPremiumPaymentService premiumPayment, IPaymentRepository repository)
+        private readonly IPremiumPaymentGateway _premiumPayment;
+        public PaymentsController(ICheapPaymentGateway cheapPayment, IExpensivePaymentGateway expensivePayment, IPremiumPaymentGateway premiumPayment, IPaymentRepository repository)
         {
             _cheapPayment = cheapPayment;
             _expensivePayment = expensivePayment;

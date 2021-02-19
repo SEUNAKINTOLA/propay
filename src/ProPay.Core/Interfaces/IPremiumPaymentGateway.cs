@@ -2,7 +2,7 @@
 
 namespace ProPay.Core.Interfaces
 {
-    public interface IPremiumPaymentService : IPaymentGateway
+    public interface IPremiumPaymentGateway : IPaymentGateway
     {
     }
 }

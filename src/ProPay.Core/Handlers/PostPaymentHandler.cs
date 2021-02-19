@@ -10,11 +10,11 @@ namespace ProPay.Core.Services
     {
         private readonly ICheapPaymentGateway _cheapPayment;
         private readonly IExpensivePaymentGateway _expensivePayment;
-        private readonly IPremiumPaymentService _premiumPayment;
+        private readonly IPremiumPaymentGateway _premiumPayment;
         private const int MAXPREMIUMPAYMENTRETRY = 3;
         private const int MAXEXPENSIVEPAYMENTRETRY = 1;
 
-        public PostPaymentHandler(ICheapPaymentGateway cheapPayment, IExpensivePaymentGateway expensivePayment, IPremiumPaymentService premiumPayment)
+        public PostPaymentHandler(ICheapPaymentGateway cheapPayment, IExpensivePaymentGateway expensivePayment, IPremiumPaymentGateway premiumPayment)
         {
             _cheapPayment = cheapPayment;
             _expensivePayment = expensivePayment;
