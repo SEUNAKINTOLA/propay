@@ -26,13 +26,6 @@ namespace ProPay.Web.Api
             _repository = repository;
         }
 
-        // GET: api/Payments
-        [HttpGet]
-        public async Task<IActionResult> List()
-        {
-            var items = (await _repository.ListAsync<PaymentDetails>());
-            return Ok(items);
-        }
 
 
         // POST: api/Payments
