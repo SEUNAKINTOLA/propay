@@ -28,9 +28,9 @@ namespace ProPay.Web.Api
 
 
 
-        // POST: api/Payments
+        // POST: api/Payments/ProcessPayment
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] PaymentRequestDTO paymentRequest)
+        public async Task<IActionResult> ProcessPayment([FromBody] PaymentRequestDTO paymentRequest)
         {
             PaymentDetails item = PaymentRequestDTO.PaymentDetailsFromRequest(paymentRequest);
             item.MarkInitiated();
